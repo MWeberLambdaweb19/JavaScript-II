@@ -1,6 +1,19 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+const WebKingdom = function() {
+  const theBest = "Mack"
+  console.log(`The best is ${theBest}`);
+  function WebCity () {
+    console.log(`We love ${theBest}!`)
+    function WebTown () {
+      console.log(`${theBest} is super cool and stuff!`)
+    };
+    WebTown();
+  }
+  WebCity();
+};
 
+WebKingdom();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
